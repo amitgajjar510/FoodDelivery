@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		7BED10972414E5E300F8CEFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BED10962414E5E300F8CEFB /* AppDelegate.swift */; };
 		7BED10992414E5E300F8CEFB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BED10982414E5E300F8CEFB /* SceneDelegate.swift */; };
-		7BED109B2414E5E300F8CEFB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BED109A2414E5E300F8CEFB /* ViewController.swift */; };
 		7BED109E2414E5E300F8CEFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BED109C2414E5E300F8CEFB /* Main.storyboard */; };
 		7BED10A02414E5E700F8CEFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BED109F2414E5E700F8CEFB /* Assets.xcassets */; };
 		7BED10A32414E5E700F8CEFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BED10A12414E5E700F8CEFB /* LaunchScreen.storyboard */; };
@@ -19,7 +18,6 @@
 		7BED10932414E5E300F8CEFB /* FoodDelivery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodDelivery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BED10962414E5E300F8CEFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7BED10982414E5E300F8CEFB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7BED109A2414E5E300F8CEFB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7BED109D2414E5E300F8CEFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7BED109F2414E5E700F8CEFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7BED10A22414E5E700F8CEFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,6 +35,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7BC40CD9241643C500C086D1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7BED109C2414E5E300F8CEFB /* Main.storyboard */,
+				7BED10A12414E5E700F8CEFB /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7BC40CDA241643E700C086D1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7BC40CDE241644D300C086D1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7BC40CDF241644DE00C086D1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7BC40CE02416451500C086D1 /* WebServiceHandler */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = WebServiceHandler;
+			sourceTree = "<group>";
+		};
 		7BED108A2414E5E300F8CEFB = {
 			isa = PBXGroup;
 			children = (
@@ -56,12 +91,14 @@
 		7BED10952414E5E300F8CEFB /* FoodDelivery */ = {
 			isa = PBXGroup;
 			children = (
+				7BC40CD9241643C500C086D1 /* View */,
+				7BC40CDA241643E700C086D1 /* Controller */,
+				7BC40CDE241644D300C086D1 /* ViewModel */,
+				7BC40CDF241644DE00C086D1 /* Model */,
+				7BC40CE02416451500C086D1 /* WebServiceHandler */,
 				7BED10962414E5E300F8CEFB /* AppDelegate.swift */,
 				7BED10982414E5E300F8CEFB /* SceneDelegate.swift */,
-				7BED109A2414E5E300F8CEFB /* ViewController.swift */,
-				7BED109C2414E5E300F8CEFB /* Main.storyboard */,
 				7BED109F2414E5E700F8CEFB /* Assets.xcassets */,
-				7BED10A12414E5E700F8CEFB /* LaunchScreen.storyboard */,
 				7BED10A42414E5E700F8CEFB /* Info.plist */,
 			);
 			path = FoodDelivery;
@@ -138,7 +175,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7BED109B2414E5E300F8CEFB /* ViewController.swift in Sources */,
 				7BED10972414E5E300F8CEFB /* AppDelegate.swift in Sources */,
 				7BED10992414E5E300F8CEFB /* SceneDelegate.swift in Sources */,
 			);
