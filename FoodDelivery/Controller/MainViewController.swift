@@ -12,10 +12,42 @@ class MainViewController: UIViewController {
 
     // MARK: - Properties & Outlets
     @IBOutlet weak var mainCollectionView: UICollectionView!
+    private let mainViewModel: MainViewModel = MainViewModel()
     
     // MARK: - View Methods
     override func viewDidLoad() {
         super.viewDidLoad()
+        initializeView()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        mainViewModel.updateHomeScreen()
+    }
+    
+    // MARK: - Private Methods
+    private func initializeView() {
+        mainViewModel.delegate = self
+    }
+}
+
+extension MainViewController: MainViewModelDelegate {
+    
+    // MARK: - MainViewModelDelegate Methods
+    func refreshHomeScreen() {
+        DispatchQueue.main.async { [unowned self] in
+            self.mainCollectionView.reloadData()
+        }
+    }
+    
+    func refreshHomeScreenBanner() {
+        DispatchQueue.main.async { [unowned self] in
+            self.mainCollectionView.reloadData()
+        }
+    }
+    
+    func error(withMessage message: String) {
+        print(message)
     }
 }
 
