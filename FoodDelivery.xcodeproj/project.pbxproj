@@ -8,6 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		7B5D18312417C5DF009D64C7 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5D18302417C5DF009D64C7 /* MainViewModel.swift */; };
+		7B5D18332417C65D009D64C7 /* WebServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5D18322417C65D009D64C7 /* WebServiceManager.swift */; };
+		7B5D18362417C74F009D64C7 /* ErrorConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5D18352417C74F009D64C7 /* ErrorConstants.swift */; };
+		7B5D18382417C986009D64C7 /* HomeScreenWebServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5D18372417C986009D64C7 /* HomeScreenWebServiceManager.swift */; };
+		7B5D183A2417CA47009D64C7 /* URLConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5D18392417CA47009D64C7 /* URLConstants.swift */; };
+		7B5D183C2417CCA4009D64C7 /* HomeScreenData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5D183B2417CCA4009D64C7 /* HomeScreenData.swift */; };
+		7B5D183E2417CD0C009D64C7 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5D183D2417CD0C009D64C7 /* Category.swift */; };
+		7B5D18402417CE22009D64C7 /* VendorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5D183F2417CE22009D64C7 /* VendorType.swift */; };
+		7B5D18422417D897009D64C7 /* HomeScreenBannerWebServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5D18412417D897009D64C7 /* HomeScreenBannerWebServiceManager.swift */; };
+		7B5D18442417D943009D64C7 /* VendorBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5D18432417D943009D64C7 /* VendorBanner.swift */; };
 		7BC40CE22416464100C086D1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC40CE12416464100C086D1 /* MainViewController.swift */; };
 		7BED10972414E5E300F8CEFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BED10962414E5E300F8CEFB /* AppDelegate.swift */; };
 		7BED10992414E5E300F8CEFB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BED10982414E5E300F8CEFB /* SceneDelegate.swift */; };
@@ -18,6 +27,15 @@
 
 /* Begin PBXFileReference section */
 		7B5D18302417C5DF009D64C7 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		7B5D18322417C65D009D64C7 /* WebServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceManager.swift; sourceTree = "<group>"; };
+		7B5D18352417C74F009D64C7 /* ErrorConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorConstants.swift; sourceTree = "<group>"; };
+		7B5D18372417C986009D64C7 /* HomeScreenWebServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenWebServiceManager.swift; sourceTree = "<group>"; };
+		7B5D18392417CA47009D64C7 /* URLConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLConstants.swift; sourceTree = "<group>"; };
+		7B5D183B2417CCA4009D64C7 /* HomeScreenData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenData.swift; sourceTree = "<group>"; };
+		7B5D183D2417CD0C009D64C7 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		7B5D183F2417CE22009D64C7 /* VendorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VendorType.swift; sourceTree = "<group>"; };
+		7B5D18412417D897009D64C7 /* HomeScreenBannerWebServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenBannerWebServiceManager.swift; sourceTree = "<group>"; };
+		7B5D18432417D943009D64C7 /* VendorBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VendorBanner.swift; sourceTree = "<group>"; };
 		7BC40CE12416464100C086D1 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		7BED10932414E5E300F8CEFB /* FoodDelivery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodDelivery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BED10962414E5E300F8CEFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +57,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7B5D18342417C73F009D64C7 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				7B5D18352417C74F009D64C7 /* ErrorConstants.swift */,
+				7B5D18392417CA47009D64C7 /* URLConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
 		7BC40CD9241643C500C086D1 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -67,6 +94,10 @@
 		7BC40CDF241644DE00C086D1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				7B5D183B2417CCA4009D64C7 /* HomeScreenData.swift */,
+				7B5D183D2417CD0C009D64C7 /* Category.swift */,
+				7B5D183F2417CE22009D64C7 /* VendorType.swift */,
+				7B5D18432417D943009D64C7 /* VendorBanner.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -74,6 +105,9 @@
 		7BC40CE02416451500C086D1 /* WebServiceHandler */ = {
 			isa = PBXGroup;
 			children = (
+				7B5D18322417C65D009D64C7 /* WebServiceManager.swift */,
+				7B5D18372417C986009D64C7 /* HomeScreenWebServiceManager.swift */,
+				7B5D18412417D897009D64C7 /* HomeScreenBannerWebServiceManager.swift */,
 			);
 			path = WebServiceHandler;
 			sourceTree = "<group>";
@@ -102,6 +136,7 @@
 				7BC40CDE241644D300C086D1 /* ViewModel */,
 				7BC40CDF241644DE00C086D1 /* Model */,
 				7BC40CE02416451500C086D1 /* WebServiceHandler */,
+				7B5D18342417C73F009D64C7 /* Constants */,
 				7BED10962414E5E300F8CEFB /* AppDelegate.swift */,
 				7BED10982414E5E300F8CEFB /* SceneDelegate.swift */,
 				7BED109F2414E5E700F8CEFB /* Assets.xcassets */,
@@ -181,9 +216,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B5D18332417C65D009D64C7 /* WebServiceManager.swift in Sources */,
+				7B5D183E2417CD0C009D64C7 /* Category.swift in Sources */,
 				7BC40CE22416464100C086D1 /* MainViewController.swift in Sources */,
+				7B5D18402417CE22009D64C7 /* VendorType.swift in Sources */,
+				7B5D18382417C986009D64C7 /* HomeScreenWebServiceManager.swift in Sources */,
+				7B5D183C2417CCA4009D64C7 /* HomeScreenData.swift in Sources */,
 				7BED10972414E5E300F8CEFB /* AppDelegate.swift in Sources */,
+				7B5D18442417D943009D64C7 /* VendorBanner.swift in Sources */,
+				7B5D18422417D897009D64C7 /* HomeScreenBannerWebServiceManager.swift in Sources */,
 				7BED10992414E5E300F8CEFB /* SceneDelegate.swift in Sources */,
+				7B5D183A2417CA47009D64C7 /* URLConstants.swift in Sources */,
+				7B5D18362417C74F009D64C7 /* ErrorConstants.swift in Sources */,
 				7B5D18312417C5DF009D64C7 /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
