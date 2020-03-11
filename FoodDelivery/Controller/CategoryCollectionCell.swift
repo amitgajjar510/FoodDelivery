@@ -24,6 +24,7 @@ class CategoryCollectionCell: UICollectionViewCell {
     internal func fillCellData(forTag tag: Int, category: Category) {
         self.tag = tag
         categoryLabel.text = category.name?.uppercased()
+        categoryImageView.image = nil
         DispatchQueue.global(qos: .background).async { [unowned self] in
             guard let url = URL(string: category.image ?? StringConstants.empty), let imageData = try? Data(contentsOf: url)
                 else {

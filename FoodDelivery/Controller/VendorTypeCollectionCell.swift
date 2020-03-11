@@ -22,6 +22,7 @@ class VendorTypeCollectionCell: UICollectionViewCell {
     // MARK: - Internal Methods
     internal func fillCellData(forTag tag: Int, vendorType: VendorType) {
         self.tag = tag
+        vendorTypeImageView.image = nil
         DispatchQueue.global(qos: .background).async { [unowned self] in
             guard let url = URL(string: vendorType.appImage ?? StringConstants.empty), let imageData = try? Data(contentsOf: url)
                 else {
